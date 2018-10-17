@@ -1,4 +1,11 @@
 __pycache__/
 venv/
+venv
 .vscode/
 htmlcov/
+htmlcov
+.coverage
+*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache

@@ -22,6 +22,8 @@ class Product():
             "product_image" : self.product_image
         }
         return product
+
+    """Get one product fxn"""
     def get_one_product(self,id):
         if id<=len(products):
             for p in products:
@@ -34,7 +36,7 @@ class Product():
                 "Message" : "Sorry, we do not have such product in store. Try an id of {} or less".format(len(products))
             }), 404)
 
-class CreateSale():
+class CreateSale(): 
     """get one product from the list"""
     def sale_a_product(self, id):
         if id<=len(products):

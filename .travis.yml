@@ -9,7 +9,8 @@ install:
   - pip install pytest
 
 script:
-  coverage run -m pytest -v tests/test_hello.py
+  - coverage run -m pytest -v tests/test_hello.py
+  - coverage report tests/test_hello.py
 
 after_success:
 - coveralls
